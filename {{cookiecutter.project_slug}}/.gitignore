@@ -3,10 +3,10 @@
 
 analysis/.ipynb_checkpoints
 
-# data/*
-# !data/source/.gitkeep
-# !data/manual/.gitkeep
-# !data/processed/.gitkeep
+data/
+!data/source/.gitkeep
+!data/manual/.gitkeep
+!data/processed/.gitkeep
 
-# output/
-# !output/.gitignore
+output/
+!output/.gitignore
