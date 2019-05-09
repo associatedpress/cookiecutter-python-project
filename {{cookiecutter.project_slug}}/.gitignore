@@ -1,6 +1,9 @@
 *.vim
 .DS_Store
 
+Pipfile
+Pipfile.lock
+
 analysis/.ipynb_checkpoints
 
 data/
