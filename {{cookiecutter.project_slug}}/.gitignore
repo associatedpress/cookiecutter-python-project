@@ -10,6 +10,7 @@ data/
 !data/source/.gitkeep
 !data/manual/.gitkeep
 !data/processed/.gitkeep
+!data/html_reports/.gitkeep
 
 output/
 !output/.gitignore
