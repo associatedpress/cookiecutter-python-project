@@ -5,6 +5,7 @@ Pipfile
 Pipfile.lock
 
 analysis/.ipynb_checkpoints
+analysis/task_notebooks/.ipynb_checkpoints
 
 data/
 !data/source/.gitkeep
