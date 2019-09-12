@@ -1,11 +1,7 @@
 *.vim
 .DS_Store
 
-Pipfile
-Pipfile.lock
-
-analysis/.ipynb_checkpoints
-analysis/task_notebooks/.ipynb_checkpoints
+.ipynb_checkpoints
 
 data/
 !data/source/.gitkeep
@@ -13,5 +9,5 @@ data/
 !data/processed/.gitkeep
 !data/html_reports/.gitkeep
 
-output/
-!output/.gitignore
+scratch
+!scratch/.gitkeep
