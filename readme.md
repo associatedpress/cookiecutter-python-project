@@ -49,7 +49,6 @@
 **Our `.gitignore`**
 
 ```
-*.vim
 .DS_Store
 
 .ipynb_checkpoints
@@ -62,4 +61,29 @@ data/
 
 scratch/
 !scratch/.gitkeep
+```
+---
+**Usage**
+
+These steps assume configuration for [datakit-project](https://github.com/associatedpress/datakit-project) are complete.
+
+- If you'd like to keep a local version of this template on your computer, git clone this repository to where your cookiecutters live: 
+```
+cd path/to/.cookiecutters
+git clone https://github.com/associatedpress/cookiecutter-python-project
+```
+- Now, when starting a new project with `datakit-project`, reference the cookiecutter in your filesystem
+```
+datakit project create --template path/to/.cookiecutters/cookiecutter-python-project`
+```
+
+- If you'd like to avoid typing `--template path/to/.cookiecutters/cookiecutter-python-project` for each project, you can edit your `~/.datakit/plugins/datakit-project/config.json` to use this template by default:
+```
+ {"default_template": "/path/to/.cookiecutters/cookiecutter-python-project"}
+```
+
+
+- You can also start a project with `datakit-project` and point directly to the github url for this template.
+```
+datakit project create --template https://github.com/associatedpress/cookiecutter-python-project
 ```
