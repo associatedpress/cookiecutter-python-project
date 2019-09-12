@@ -8,6 +8,3 @@ data/
 !data/manual/.gitkeep
 !data/processed/.gitkeep
 !data/html_reports/.gitkeep
-
-scratch
-!scratch/.gitkeep
