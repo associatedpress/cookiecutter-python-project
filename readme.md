@@ -82,8 +82,12 @@ datakit project create --template path/to/.cookiecutters/cookiecutter-python-pro
  {"default_template": "/path/to/.cookiecutters/cookiecutter-python-project"}
 ```
 
-
 - You can also start a project with `datakit-project` and point directly to the github url for this template.
 ```
 datakit project create --template https://github.com/associatedpress/cookiecutter-python-project
+```
+
+- As with a local copy of this cookiecutter template, you can also set the default template to this repository's github url in your `~/.datakit/plugins/datakit-project/config.json`:
+```
+ {"default_template": "https://github.com/associatedpress/cookiecutter-python-project"}
 ```
