@@ -47,3 +47,19 @@
 ---
 
 **Our `.gitignore`**
+
+```
+*.vim
+.DS_Store
+
+.ipynb_checkpoints
+
+data/
+!data/source/.gitkeep
+!data/manual/.gitkeep
+!data/processed/.gitkeep
+!data/html_reports/.gitkeep
+
+scratch/
+!scratch/.gitkeep
+```
