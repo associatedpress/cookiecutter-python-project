@@ -1,4 +1,4 @@
-## DataKit Python Template
+## AP Python Cookiecutter
 ---
 **Project Structure**
 ```
