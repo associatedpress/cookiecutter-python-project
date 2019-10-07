@@ -34,7 +34,6 @@ After cloning the git repo:
 
 `datakit data pull` to rerieve the data files.
 
-Open `{{ cookiecutter.project_slug }}.Rproj` in RStudio.
 
 *TK: For more complex or unusual projects additional directions follow*
 
