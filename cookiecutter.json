@@ -3,5 +3,8 @@
   "email": "",
   "project_name": "New Project",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "project_short_description": "TK: short project description"
+  "project_short_description": "TK: short project description",
+  "_copy_without_render": [
+    "analysis/*"
+  ]
 }
