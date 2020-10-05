@@ -1,7 +1,9 @@
 *.vim
+.env
 .DS_Store
 
 .ipynb_checkpoints
+*.ipynb
 
 data/
 !data/source/.gitkeep
