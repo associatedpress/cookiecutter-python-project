@@ -32,7 +32,7 @@
 
 After cloning the git repo:
 
-`datakit data pull` to rerieve the data files.
+`datakit data pull` to retrieve the data files.
 
 Open `{{ cookiecutter.project_slug }}.Rproj` in RStudio.
 
