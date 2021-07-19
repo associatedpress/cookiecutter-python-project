@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.logo-container {
+  /* margin: auto; */
+  width: fit-content;
+}
+img {
+  display: block;
+  margin: auto;
+}
+.jp-RenderedHTMLCommon {
+  width: 90%;
+  margin: auto;
+}
+/* not showing code cells */
+.jp-InputArea {
+  display: none;
+}
