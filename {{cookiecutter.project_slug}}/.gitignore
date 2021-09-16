@@ -1,5 +1,6 @@
 *.vim
 .env
+.Renviron
 .DS_Store
 
 .ipynb_checkpoints

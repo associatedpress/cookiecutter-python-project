@@ -4,7 +4,7 @@ command -v pipenv >/dev/null 2>&1 || { echo >&2 "pipenv not found.  Aborting sta
 ## Main installs typical to a project
 pipenv install ipython ipykernel pandas matplotlib notebook jupyterlab jupytext
 ## Add the first install script to the Pipfile
-echo -e "\n[scripts]\nfirst_install = \"python .first_install.py\"" >> Pipfile
+echo -e "\n[scripts]\nfirst_install = \"python .first_install.py\"\nexport_rmarkdown = \"Rscript .export_rmarkdown.R\"" >> Pipfile
 ## Add script to render reports using AP nbconvert template
 echo -e "\nexport_html_notebook = \"jupyter-nbconvert --to html --template ap_report --execute --output-dir ./data/html_reports/ --TemplateExporter.extra_template_basedirs=./.nbconvert_templates\"" >> Pipfile
 ## Run first_install script
