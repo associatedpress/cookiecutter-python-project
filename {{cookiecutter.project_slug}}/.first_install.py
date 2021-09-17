@@ -13,3 +13,6 @@ os.system('python -m ipykernel install --user --name={{ cookiecutter.project_slu
 os.system('jupyter lab build')
 # Generate ipynb for every markdown file in analysis
 os.system('jupytext --set-formats md,ipynb analysis/*.md')
+# Enable template server
+os.system('jupyter labextension install jupyterlab_templates')
+os.system('jupyter serverextension enable --py jupyterlab_templates')
