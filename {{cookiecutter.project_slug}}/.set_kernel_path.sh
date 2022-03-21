@@ -3,7 +3,7 @@
 ## Set kernels to run from where git was initialized (the project root)
 ## If git wasn't initialized, notebooks run from where the notebook file is (the default)
 
-JUPYTER_DATA_DIR=$(jupyter --data-dir)
+JUPYTER_DATA_DIR=$(pipenv run jupyter --data-dir)
 KERNEL_PATH=$JUPYTER_DATA_DIR/kernels/{{cookiecutter.project_slug}}
 VENV_DIR=$(pipenv --venv)
 
