@@ -4,7 +4,7 @@
 ## If git wasn't initialized, notebooks run from where the notebook file is (the default)
 
 JUPYTER_DATA_DIR=$(jupyter --data-dir)
-KERNEL_PATH=$JUPYTER_DATA_DIR/kernels/{{cookiecutter.project_slug}}
+KERNEL_PATH=$JUPYTER_DATA_DIR/kernels/python3 ## python3 is hardcoded, is there a way to print the name out?
 VENV_DIR=$(pipenv --venv)
 
 ## Replace the default kernel.json with one that points to kernel.sh
