@@ -19,7 +19,7 @@ with open ('.Renviron', 'w') as Renv_fi:
 # Need to build jupyter lab after installing jupyter plugins (like jupytext)
 run(['jupyter', 'lab', 'build'])
 # Generate ipynb for every markdown file in analysis
-run(['jupytext', '--set-formats', 'md,ipynb', 'analysis/*.md'])
+run(['jupytext', '--set-formats', 'Rmd,ipynb', 'analysis/*.md'])
 # Install jupyter template extension and enable the template server
 run(['jupyter', 'labextension', 'install', 'jupyterlab_templates'])
 run(['jupyter', 'serverextension', 'enable', '--py', 'jupyterlab_templates'])
