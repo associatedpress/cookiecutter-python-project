@@ -3,7 +3,7 @@
 command -v pipenv >/dev/null 2>&1 || { echo >&2 "pipenv not found.  Aborting startup script."; exit 1; }
 
 ## Main installs typical to a project
-pipenv install ipython ipykernel pandas matplotlib notebook jupyterlab altair jupytext jupyterlab_templates
+pipenv install --python $(pyenv version-name) ipython ipykernel pandas matplotlib notebook jupyterlab altair jupytext jupyterlab_templates
 
 ## Add the first install script to the Pipfile and rmarkdown export script
 echo -e "\n[scripts]\nfirst_install = \"python .first_install.py\"\nexport_rmarkdown = \"Rscript .export_rmarkdown.R\"" >> Pipfile
