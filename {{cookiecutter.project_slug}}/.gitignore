@@ -1,4 +1,5 @@
 *.vim
+.venv
 .env
 .Renviron
 .DS_Store
