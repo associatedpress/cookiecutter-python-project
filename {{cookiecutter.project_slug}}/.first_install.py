@@ -28,7 +28,7 @@ with open ('.Renviron', 'w') as Renv_fi:
     Renv_fi.write(f"RETICULATE_PYTHON={RETICULATE_PYTHON}")
 
 # Generate ipynb for every markdown file in analysis
-run(['pipenv', 'run', 'jupytext', '--set-formats', 'Rmd,ipynb', 'analysis/*.md'])
+run(['pipenv', 'run', 'jupytext', '--set-formats', 'Rmd,ipynb', 'analysis/*.Rmd'])
 # Install jupyter template extension and enable the template server
 run(['pipenv', 'run', 'jupyter', 'labextension', 'install', 'jupyterlab_templates'])
 run(['pipenv', 'run', 'jupyter', 'serverextension', 'enable', '--py', 'jupyterlab_templates'])
