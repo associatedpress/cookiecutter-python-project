@@ -1,0 +1,11 @@
+project:
+  output-dir: data/html_reports
+  
+format:
+  html:
+    theme: default
+  pdf:
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+jupyter: {{cookiecutter.project_slug}}
