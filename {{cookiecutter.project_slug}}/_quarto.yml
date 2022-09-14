@@ -8,4 +8,3 @@ format:
     documentclass: report
     margin-left: 30mm
     margin-right: 30mm
-jupyter: {{cookiecutter.project_slug}}
