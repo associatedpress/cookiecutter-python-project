@@ -1,11 +1,13 @@
 *.vim
-.venv
 .env
 .Renviron
+.venv
+.quarto
 .DS_Store
 
 .ipynb_checkpoints
 analysis/*.ipynb
+analysis/archive/*.ipynb
 !analysis/notebook_templates/*.ipynb
 
 data/
