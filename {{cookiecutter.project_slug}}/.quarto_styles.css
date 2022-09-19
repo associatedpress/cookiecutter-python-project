@@ -1,0 +1,8 @@
+canvas.marks {
+  display: block;
+  margin: auto;
+}
+
+div.vega-embed {
+  width: 100%;
+}
