@@ -10,7 +10,6 @@ output:
 format:
   html:
     theme: simplex
-    css: .quarto_styles.css
     smooth-scroll: true
     embed-resources: true
     standalone: true
