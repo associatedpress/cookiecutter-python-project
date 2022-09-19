@@ -1,9 +1,16 @@
 project:
   output-dir: data/html_reports
-  
+number-sections: false
+toc: true
+toc-location: left
+output:
+  html_document:
+    keep_md: false
+    keep_ipynb: false
 format:
   html:
-    theme: default
+    theme: simplex
+    smooth-scroll: true
   pdf:
     documentclass: report
     margin-left: 30mm
