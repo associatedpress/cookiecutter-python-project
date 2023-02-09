@@ -10,13 +10,5 @@ analysis/*.ipynb
 analysis/archive/*.ipynb
 !analysis/notebook_templates/*.ipynb
 
-data/
-!data/source/.gitkeep
-!data/manual/.gitkeep
-!data/processed/.gitkeep
-!data/html_reports/.gitkeep
-!data/public/.gitkeep
-!data/documentation/.gitkeep
-
-scratch/
+scratch/*
 !scratch/.gitkeep
