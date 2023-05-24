@@ -1,11 +1,12 @@
 {
-  "full_name": "Firstname Lastname",
-  "email": "",
-  "project_name": "New Project",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-  "project_short_description": "TK: short project description",
-  "_copy_without_render": [
-    "analysis/*",
-    ".nbconvert_templates/*"
-  ]
+    "full_name": "Firstname Lastname",
+    "email": "",
+    "project_name": "New Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_short_description": "TK: short project description",
+    "_copy_without_render": [
+        "analysis/*",
+        ".nbconvert_templates/*"
+    ],
+    "additional_packages_to_install": ""
 }
