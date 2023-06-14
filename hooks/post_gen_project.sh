@@ -8,4 +8,4 @@ command -v pipenv >/dev/null 2>&1 || { echo >&2 "pipenv not found.  Aborting sta
 ###### variable, to set up the jupyter lab template directory/enable its server,
 ###### and to set up the git solution for changing cwd in an analysis file.
 
-python ./.first_install.py "{{cookiecutter.additional_packages_to_install}}"
+python ./.first_install.py "{{cookiecutter.additional_packages_to_install}}, {{cookiecutter.use_case.packages}}"
