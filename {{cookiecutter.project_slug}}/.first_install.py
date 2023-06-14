@@ -14,8 +14,10 @@ PYENV_PREFIX = "".join(
 if os.path.isfile("./Pipfile"):
     run(["pipenv", "install", "--dev"])
 else:
-    # get the additional packages argument passed to the script
+    # get the additional packages and use case libraries argument passed to the script via context variables in hooks/post_gen_project.sh
+    additional_packages = sys.argv[1].replace("[", "").replace("]", "")
     additional_packages = sys.argv[1].split(", ") if sys.argv[1] != "None" else []
+
     run(
         [
             "pipenv",
