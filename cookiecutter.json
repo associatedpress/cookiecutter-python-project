@@ -8,5 +8,6 @@
         "analysis/*",
         ".nbconvert_templates/*"
     ],
-    "additional_packages_to_install": ""
+    "additional_packages_to_install": "",
+    "use_case": ""
 }
