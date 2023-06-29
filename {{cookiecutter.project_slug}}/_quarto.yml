@@ -1,5 +1,6 @@
 project:
   output-dir: data/html_reports
+  execute-dir: project
 number-sections: false
 toc: true
 toc-location: left
