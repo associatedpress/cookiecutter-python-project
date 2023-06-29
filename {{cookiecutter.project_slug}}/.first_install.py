@@ -11,7 +11,7 @@ PYENV_PREFIX = "".join(check_output(['pyenv', 'prefix', f"{PYENV_VERSION}"]).dec
 if os.path.isfile('./Pipfile'):
     run(['pipenv', 'install', '--dev'])
 else:
-    run(['pipenv', 'install', '--python', f"{PYENV_PREFIX}/bin/python", 'ipython', 'ipykernel', 'pandas', 'matplotlib', 'notebook', 'jupyterlab', 'altair', 'jupytext', 'jupyterlab_templates', 'itables', 'ap-altair-theme'])
+    run(['pipenv', 'install', '--python', f"{PYENV_PREFIX}/bin/python", 'ipython', 'ipykernel', 'pandas', 'matplotlib', 'notebook', 'jupyterlab==3.6.3', 'altair', 'jupytext', 'jupyterlab_templates', 'itables', 'ap-altair-theme'])
     ## Add this script to the Pipfile, along with the rmarkdown export script
     with open('Pipfile', 'a') as pipfile:
         pipfile.write('\n[scripts]\nexport_rmarkdown = "Rscript .export_rmarkdown.R"')
@@ -30,8 +30,6 @@ with open ('.Renviron', 'w') as Renv_fi:
 # Generate ipynb for every markdown file in analysis
 run(['pipenv', 'run', 'jupytext', '--set-formats', 'Rmd,ipynb', 'analysis/*.Rmd'])
 # Install jupyter template extension and enable the template server
-run(['pipenv', 'run', 'jupyter', 'labextension', 'install', 'jupyterlab_templates'])
-run(['pipenv', 'run', 'jupyter', 'serverextension', 'enable', '--py', 'jupyterlab_templates'])
 run(['mkdir', f"{VENV_DIR}/share/jupyter/notebook_templates"])
 for path in TEMPLATE_PATHS:
     run(['cp', '-r', path, f"{VENV_DIR}/share/jupyter/notebook_templates/"])
