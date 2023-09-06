@@ -1,5 +1,6 @@
 import os.path
 import glob
+import argparse
 from subprocess import check_output
 from subprocess import run
 
@@ -8,8 +9,15 @@ run(['mkdir', './.venv'])
 PYENV_VERSION = "".join(check_output(['pyenv', 'version-name']).decode('utf-8').split())
 PYENV_PREFIX = "".join(check_output(['pyenv', 'prefix', f"{PYENV_VERSION}"]).decode('utf-8').split())
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--python', help='Python version to use with the project')
+args = parser.parse_args()
+
 if os.path.isfile('./Pipfile'):
-    run(['pipenv', 'install', '--dev'])
+    if args.python:
+        run(['pipenv', 'install', '--python', f"{args.python}", '--dev'])
+    else:
+        run(['pipenv', 'install', '--dev'])
 else:
     run(['pipenv', 'install', '--python', f"{PYENV_PREFIX}/bin/python", 'ipython', 'ipykernel', 'pandas', 'matplotlib', 'notebook', 'jupyterlab==3.6.3', 'altair', 'jupytext', 'jupyterlab_templates', 'itables', 'ap-altair-theme'])
     ## Add this script to the Pipfile, along with the rmarkdown export script
