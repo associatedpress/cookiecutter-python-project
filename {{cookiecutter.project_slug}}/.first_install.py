@@ -19,7 +19,7 @@ if os.path.isfile('./Pipfile'):
     else:
         run(['pipenv', 'install', '--dev'])
 else:
-    run(['pipenv', 'install', '--python', f"{PYENV_PREFIX}/bin/python", 'ipython', 'ipykernel', 'pandas', 'matplotlib', 'notebook', 'jupyterlab==3.6.3', 'pyarrow', 'altair', 'jupytext', 'jupyterlab_templates', 'itables', 'ap-altair-theme'])
+    run(['pipenv', 'install', '--python', f"{PYENV_PREFIX}/bin/python", 'ipython', 'ipykernel', 'pandas', 'matplotlib', 'notebook', 'jupyterlab', 'pyarrow', 'altair', 'jupytext', 'jupyterlab_templates', 'itables', 'ap-altair-theme'])
     ## Add this script to the Pipfile, along with the rmarkdown export script
     with open('Pipfile', 'a') as pipfile:
         pipfile.write('\n[scripts]\nexport_rmarkdown = "Rscript .export_rmarkdown.R"')
